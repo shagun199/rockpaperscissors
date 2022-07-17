@@ -1,0 +1,86 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.restart-btn{
+    display: none;
+    background-color: cornflowerblue;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.restart-btn:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    margin: 15px 0;
+}
+
+header h1{
+    margin-bottom: 15px ;
+}
+
+.score{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.score .player{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.score p:last-child{
+    background-color: #000000;
+    color: #fff;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.choices #rock:hover{
+    color :cornflowerblue;
+}
+
+.choices #paper:hover{
+    color :cornflowerblue;
+}
+
+.choices #scissor:hover{
+    color :cornflowerblue;
+}
+
+@media screen and (max-width: 600px){
+    .choices{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+}
